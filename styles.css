@@ -1,0 +1,389 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* hero section */
+
+.hero {
+    background-image: url("https://cosmeticshub.in/wp-content/uploads/2024/02/pretty-grunge-3-1.webp");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #ff3e6c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+/* Header and Navigation */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+} */
+
+.logo a{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+
+}
+
+.logo span {
+    color: #e01468;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e01468;
+}
+
+/* header nav .icons a {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+header nav .icons img {
+    width: 20px;
+} */
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+
+/* Product List */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.rating span {
+    color: #ffd700;
+    font-size: 14px;
+}
+
+.color-options,
+.size-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.color-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+.color-dot:hover {
+    border: 2px solid #e01468;
+}
+
+button {
+    background-color: #e01468;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #d0135e;
+}
+
+.notify-button1{
+    margin-top: 20px;
+}
+
+.notify-button2{
+    margin-top: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 0;
+    border-top: 1px solid #e1e1e1;
+    font-size: 14px;
+}
+
+footer .social-media {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a img:hover {
+    transform: scale(1.1);
+}
+
+footer .footer-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #e1e1e1;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+footer .footer-bottom .policies {
+    margin-top: 10px;
+}
+
+footer .footer-bottom .policies a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer .footer-bottom .policies a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles for Footer */
+@media (max-width: 768px) {
+    footer .footer-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        text-align: left;
+        background-color: #ff3e6c;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        flex-direction:column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ff85a2;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero .btn {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
